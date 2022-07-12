@@ -2,11 +2,73 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Library Project</title>
         <link rel="stylesheet" href="./style.css">
-        <script src="./script.js"></script>
+        <script src="./script.js" defer></script>
     </head>
     <body>
-        <h1>Hello world</h1>
+    <div class="container">
+        <button id="addButton">+</button>
+        <h1>Virtual Library</h1>
+        <div class="separator"></div>
+
+        <div class="bookContainer">
+            <div class="book">
+                <div class="title">Title: "Harry Potter"</div>
+                <div class="author">Author: JK Simmons</div>
+                <div class="pages">Pages: 279</div>
+                <div class="readStatus">Read</div>
+                <button class="deleteBook"><img src="./img/delete.png" alt=""></button>
+            </div>
+            <div class="book">
+                <div class="title">Title: "Test book2"</div>
+                <div class="author">Author: Testus Authorus</div>
+                <div class="pages">Pages: 123</div>
+                <div class="readStatus">Unread</div>
+                <button class="deleteBook"><img src="./img/delete.png" alt=""></button>
+            </div>
+            <div class="book">
+                <div class="title">Title: "Twilight"</div>
+                <div class="author">Author: Steph Meyer</div>
+                <div class="pages">Pages: 578</div>
+                <div class="readStatus">Read</div>
+                <button class="deleteBook"><img src="./img/delete.png" alt=""></button>
+            </div>
+            <div class="book">
+                <div class="title">Title: "Twilight2 superlooooooooooong title"</div>
+                <div class="author">Author: Steph Mdsaaaaaaaaaaaaaaeyer</div>
+                <div class="pages">Pages: 578</div>
+                <div class="readStatus">Read</div>
+                <button class="deleteBook"><img src="./img/delete.png" alt=""></button>
+            </div>
+        </div>
+    </div>      <!-- Container end -->
+
+
+        <div id="popupForm">
+
+            <div class="popupContainer">
+                <div class="popupTitle">
+                    <label for="bookTitle">Book title:</label>
+                    <input type="text" name="bookTitle" id="bookTitle" required>
+                </div>
+                <div class="popupAuthor">
+                    <label for="bookAuthor">Author:</label>
+                    <input type="text" name="bookAuthor" id="bookAuthor" required>
+                </div>
+                <div class="popupPages">
+                    <label for="numPages">Number of pages:</label>
+                    <input type="number" name="numPages" id="numPages" required>
+                </div>
+                <div class="popupRead">
+                    <label for="readStatus">Have you read it?</label>
+                    <input type="checkbox" name="readStatus" id="readStatus" required>
+                </div>
+                <button id="createBook">Create Book</button>
+                <button id="closeForm">Close Form</button>
+            </div>
+        </div>
     </body>
 </html>
