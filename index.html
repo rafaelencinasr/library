@@ -15,19 +15,20 @@
         <div class="separator"></div>
 
         <div class="bookContainer">
-            <div class="book">
-                <div class="title">Title: "Harry Potter"</div>
+            <!-- <div class="book"> Placeholders
+                <div class="title" data-test="testatt">Title: "Harry Potter"</div>
                 <div class="author">Author: JK Simmons</div>
                 <div class="pages">Pages: 279</div>
                 <div class="readStatus">Read</div>
-                <button class="deleteBook"><img src="./img/delete.png" alt=""></button>
+                <button class="readStatusButton">Change status</button>
+                <button class="deleteBook" data-test="testatt"><img src="./img/delete.png" alt=""></button>
             </div>
             <div class="book">
-                <div class="title">Title: "Test book2"</div>
+                <div class="title" data-test="testatt2">Title: "Test book2"</div>
                 <div class="author">Author: Testus Authorus</div>
                 <div class="pages">Pages: 123</div>
                 <div class="readStatus">Unread</div>
-                <button class="deleteBook"><img src="./img/delete.png" alt=""></button>
+                <button class="deleteBook" data-test="testatt2"><img src="./img/delete.png" alt=""></button>
             </div>
             <div class="book">
                 <div class="title">Title: "Twilight"</div>
@@ -42,7 +43,7 @@
                 <div class="pages">Pages: 578</div>
                 <div class="readStatus">Read</div>
                 <button class="deleteBook"><img src="./img/delete.png" alt=""></button>
-            </div>
+            </div> -->
         </div>
     </div>      <!-- Container end -->
 
@@ -50,25 +51,25 @@
         <div id="popupForm">
 
             <div class="popupContainer">
-                <div class="popupTitle">
+                
                     <label for="bookTitle">Book title:</label>
-                    <input type="text" name="bookTitle" id="bookTitle" required>
-                </div>
-                <div class="popupAuthor">
+                    <input type="text" name="bookTitle" id="bookTitle" required placeholder="Book title">
+                
+                
                     <label for="bookAuthor">Author:</label>
-                    <input type="text" name="bookAuthor" id="bookAuthor" required>
-                </div>
-                <div class="popupPages">
+                    <input type="text" name="bookAuthor" id="bookAuthor" required placeholder="Book author">
+                
+                
                     <label for="numPages">Number of pages:</label>
-                    <input type="number" name="numPages" id="numPages" required>
-                </div>
-                <div class="popupRead">
-                    <label for="readStatus">Have you read it?</label>
-                    <input type="checkbox" name="readStatus" id="readStatus" required>
-                </div>
+                    <input type="number" name="numPages" id="numPages" required placeholder="Number of pages">
+               
+                
+                    <label for="readStatus">Have you read it yet?</label>
+                    <input type="checkbox" name="readStatus" id="readStatus" required place>
+                
                 <button id="createBook">Create Book</button>
                 <button id="closeForm">Close Form</button>
             </div>
-        </div>
+        </form>
     </body>
 </html>

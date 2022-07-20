@@ -85,6 +85,17 @@ h1 {
     align-items: center;
 }
 
+
+.readStatusButton{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    border: none;
+    cursor:pointer;
+}
+
 .deleteBook {
     background-color: transparent;
     width: auto;
@@ -125,5 +136,19 @@ h1 {
 }
 
 .popupContainer {
-    border: 1px solid red;
+    width: 400px;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.innerPopup {
+/*     border: 1px solid red;
+    width: 200px; */
+}
+
+#closeForm {
+    background-color: red;
+    color: white;
 }
